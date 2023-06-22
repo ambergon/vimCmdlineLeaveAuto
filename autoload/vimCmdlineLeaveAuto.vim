@@ -65,6 +65,7 @@ function! s:d( )
     let s:x = py3eval( s:vimCmdlineLeaveSendKey . ".Key(26)" )
 endfunction
 autocmd! CmdlineLeave   : call s:d()
+autocmd! CmdlineLeave   / call s:d()
 
 
 
