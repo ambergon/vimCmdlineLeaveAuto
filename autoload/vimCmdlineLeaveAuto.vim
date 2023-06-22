@@ -59,13 +59,12 @@ vimCmdlineLeaveSendKeyInst = vimCmdlineLeaveSendKey()
 EOF
 
 let s:vimCmdlineLeaveSendKey = "vimCmdlineLeaveSendKeyInst"
-function! s:d( )
+function! vimCmdlineLeaveAuto#Call( )
     "22 全角
     "26 半角
     let s:x = py3eval( s:vimCmdlineLeaveSendKey . ".Key(26)" )
 endfunction
-autocmd! CmdlineLeave   : call s:d()
-autocmd! CmdlineLeave   / call s:d()
+
 
 
 
